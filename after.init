@@ -26,9 +26,9 @@ set -e
 export ipsetname=ufw-blocklist-ipsum
 
 # seed file containing the list of IP addresses to be blocked, one per line
-# curl -sS -f --compressed 'https://raw.githubusercontent.com/stamparm/ipsum/master/levels/4.txt' > /etc/ipsum.4.txt
+# curl -sS -f --compressed 'https://raw.githubusercontent.com/stamparm/ipsum/master/levels/1.txt' > /etc/ipsum.1.txt
 # ipset is updated daily by /etc/cron.daily/ufw-blocklist-ipsum
-export seedlist=/etc/ipsum.4.txt
+export seedlist=/etc/ipsum.1.txt
 
 export IPSET_EXE="/sbin/ipset"
 # check ipset exists and is executable
